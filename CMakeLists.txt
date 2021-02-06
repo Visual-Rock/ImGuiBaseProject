@@ -29,6 +29,16 @@ set(CPP_SRC_FILES
     src/main.cpp
 )
 
+set(IMGUI_CPP_FILES
+    include/imgui/include/imgui/imgui.cpp
+    include/imgui/include/imgui/imgui_demo.cpp
+    include/imgui/include/imgui/imgui_draw.cpp
+    include/imgui/include/imgui/imgui_impl_glfw.cpp
+    include/imgui/include/imgui/imgui_impl_opengl3.cpp
+    include/imgui/include/imgui/imgui_tables.cpp
+    include/imgui/include/imgui/imgui_widgets.cpp
+)
+
 # Sets include directories for glad GLFW and imgui
 include_directories(include/glad/include include/GLFW/include include/imgui/include/ src/)
 
@@ -40,7 +50,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 add_subdirectory(include/GLFW)
 add_subdirectory(include/glad)
 # adds a Executable with the Source files defined in CPP_SRC_FILES
-add_executable(${CMAKE_PROJECT_NAME} ${CPP_SRC_FILES})
+add_executable(${CMAKE_PROJECT_NAME} ${CPP_SRC_FILES} ${IMGUI_CPP_FILES})
 # Links all libarys to executable
 target_link_libraries(${CMAKE_PROJECT_NAME} ${OPENGL_gl_LIBRARY} glad glfw)
 if (UNIX)
