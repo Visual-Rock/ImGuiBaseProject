@@ -1,0 +1,13 @@
+# ImGui Template Ignores
+
+#Files
+cmake_install.cmake
+CMakeCache.txt
+Makefile
+include/GLFW/src/Makefile
+include/GLFW/cmake_uninstall.cmake
+
+# Folders
+CMakeFiles/
+lib/
+bin/

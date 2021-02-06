@@ -37,7 +37,7 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 # Adds glad and GLFW as subdirectory
-add_subdirectory(include/glfw-3.3.2)
+add_subdirectory(include/GLFW)
 add_subdirectory(include/glad)
 # adds a Executable with the Source files defined in CPP_SRC_FILES
 add_executable(${CMAKE_PROJECT_NAME} ${CPP_SRC_FILES})
