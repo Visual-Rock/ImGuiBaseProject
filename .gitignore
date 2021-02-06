@@ -1,11 +1,15 @@
 # ImGui Template Ignores
 
 #Files
+*.sln
+*.filters
+*.vcxproj
 cmake_install.cmake
 CMakeCache.txt
 Makefile
 include/GLFW/src/Makefile
 include/GLFW/cmake_uninstall.cmake
+include/GLFW/src/glfw3.pc
 
 # Folders
 CMakeFiles/
